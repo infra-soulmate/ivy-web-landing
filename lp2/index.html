@@ -187,10 +187,10 @@
     gtag('config', 'G-T0QE3560G5');
   </script>
   <script type="text/javascript">
-    const ctas = document.getElementsByClassName("cta");
-    for(cta in ctas) {
+    const ctas = document.querySelectorAll(".cta");
+    ctas.forEach(cta => {
       cta.href = (cta.href + window.location.search);
-    }
+    });
   </script>
 </body>
 </html>
