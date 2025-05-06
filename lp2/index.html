@@ -98,18 +98,8 @@
                     </div>
                     <div class="swiper-button-prev"></div>
                     <div class="swiper-button-next"></div>
+                    <div class="swiper-pagination"></div>
                   </div>
-                </div>
-                <div class="-mt-4 flex items-center justify-center gap-1 pt-3">
-                  <div id="swiper-indicator-0" class="swiper-indicator rounded-full bg-rose-400 h-2.5 w-2.5"></div>
-                  <div id="swiper-indicator-1" class="swiper-indicator h-1.5 w-1.5 rounded-full bg-white/75"></div>
-                  <div id="swiper-indicator-2" class="swiper-indicator h-1.5 w-1.5 rounded-full bg-white/75"></div>
-                  <div id="swiper-indicator-3" class="swiper-indicator h-1.5 w-1.5 rounded-full bg-white/75"></div>
-                  <div id="swiper-indicator-4" class="swiper-indicator h-1.5 w-1.5 rounded-full bg-white/75"></div>
-                  <div id="swiper-indicator-5" class="swiper-indicator h-1.5 w-1.5 rounded-full bg-white/75"></div>
-                  <div id="swiper-indicator-6" class="swiper-indicator h-1.5 w-1.5 rounded-full bg-white/75"></div>
-                  <div id="swiper-indicator-7" class="swiper-indicator h-1.5 w-1.5 rounded-full bg-white/75"></div>
-                  <div id="swiper-indicator-8" class="swiper-indicator h-1.5 w-1.5 rounded-full bg-white/75"></div>
                 </div>
                 <div class="flex flex-col gap-1 px-4 text-sm">
                   <div>${post.caption}</div>
@@ -165,6 +155,9 @@
       navigation: {
         nextEl: '.swiper-button-next',
         prevEl: '.swiper-button-prev',
+      },
+      pagination: {
+        el: ".swiper-pagination"
       },
     });
     swiper.on("activeIndexChange", function() {
