@@ -38,7 +38,7 @@
       <script type="text/javascript">
         for (let i = 0; i < idols.length; i++) {
           const idol = idols[i];
-          let emotionChoiceHtml = `<div id="emotion-choice-${i}" class="emotion-choice size-10 rounded-full bg-gray-800 border-t border-gray-100 place-content-center text-center">${idol.emoji}</div>`;
+          let emotionChoiceHtml = `<div id="emotion-choice-${i}" class="emotion-choice size-10 rounded-full bg-gray-800 border-t border-gray-100 place-content-center text-center cursor-pointer" onclick="goToSlide(${i})">${idol.emoji}</div>`;
           document.getElementById("emotion-choices").innerHTML += emotionChoiceHtml;
         }
       </script>
@@ -130,6 +130,10 @@
       primaryCta.textContent = `Join ${idol.display_name} now!`;
       primaryCta.href = `https://ivysoulmate.com/idol/${idol.slug}`;
       updateCtaQueryParams();
+    }
+
+    function goToSlide(index) {
+      swiper.slideToLoop(index);
     }
   </script>
 
