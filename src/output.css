@@ -30,6 +30,9 @@
     --spacing: 0.25rem;
     --breakpoint-md: 48rem;
     --container-3xs: 16rem;
+    --container-sm: 24rem;
+    --container-md: 28rem;
+    --container-lg: 32rem;
     --container-2xl: 42rem;
     --container-3xl: 48rem;
     --container-7xl: 80rem;
@@ -322,6 +325,9 @@
   .w-full {
     width: 100%;
   }
+  .w-md {
+    width: var(--container-md);
+  }
   .w-screen {
     width: 100vw;
   }
@@ -337,11 +343,29 @@
   .max-w-7xl {
     max-width: var(--container-7xl);
   }
+  .max-w-60 {
+    max-width: calc(var(--spacing) * 60);
+  }
+  .max-w-80 {
+    max-width: calc(var(--spacing) * 80);
+  }
+  .max-w-100 {
+    max-width: calc(var(--spacing) * 100);
+  }
   .max-w-\[85rem\] {
     max-width: 85rem;
   }
+  .max-w-lg {
+    max-width: var(--container-lg);
+  }
+  .max-w-md {
+    max-width: var(--container-md);
+  }
   .max-w-screen-md {
     max-width: var(--breakpoint-md);
+  }
+  .max-w-sm {
+    max-width: var(--container-sm);
   }
   .basis-full {
     flex-basis: 100%;
@@ -432,6 +456,9 @@
   }
   .bg-gray-100 {
     background-color: var(--color-gray-100);
+  }
+  .bg-gray-200 {
+    background-color: var(--color-gray-200);
   }
   .bg-gray-800 {
     background-color: var(--color-gray-800);

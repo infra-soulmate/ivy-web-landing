@@ -27,55 +27,57 @@
   <meta property="twitter:image" content="https://ivy-cdn.b-cdn.net/static/og.jpg" />
 </head>
 <body class="font-dm-sans text-gray-200">
-  <div class="w-screen h-screen bg-radial from-pink-900 to-gray-950 px-8 place-content-center">
-    <img src="../assets/logo.png" class="w-40 pb-3">
-    <p class="font-extrabold text-2xl">Are you...</p>
-    <p id="emotion-question" class="font-extrabold text-3xl"></p>
-    <div id="emotion-choices" class="flex py-6 place-content-evenly"></div>
+  <div class="w-screen h-screen bg-radial from-pink-900 to-gray-950 px-8 place-content-center flex items-center">
+    <div class="w-md">
+      <img src="../assets/logo.png" class="w-40 pb-3">
+      <p class="font-extrabold text-2xl">Are you...</p>
+      <p id="emotion-question" class="font-extrabold text-3xl"></p>
+      <div id="emotion-choices" class="flex py-6 place-content-evenly"></div>
 
-    <script type="text/javascript" src="data.json"></script>
-    <script type="text/javascript">
-      for (let i = 0; i < idols.length; i++) {
-        const idol = idols[i];
-        let emotionChoiceHtml = `<div id="emotion-choice-${i}" class="emotion-choice size-10 rounded-full bg-gray-800 border-t border-gray-100 place-content-center text-center">${idol.emoji}</div>`;
-        document.getElementById("emotion-choices").innerHTML += emotionChoiceHtml;
-      }
-    </script>
+      <script type="text/javascript" src="data.json"></script>
+      <script type="text/javascript">
+        for (let i = 0; i < idols.length; i++) {
+          const idol = idols[i];
+          let emotionChoiceHtml = `<div id="emotion-choice-${i}" class="emotion-choice size-10 rounded-full bg-gray-800 border-t border-gray-100 place-content-center text-center">${idol.emoji}</div>`;
+          document.getElementById("emotion-choices").innerHTML += emotionChoiceHtml;
+        }
+      </script>
 
-    <p class="font-extrabold text-center">
-      Chat with <span class="text-orange-400">GODDESS GIRLS</span> and<br/>
-      get <span class="text-orange-400">EXCLUSIVE CONTENTS</span>
-    </p>
+      <p class="font-extrabold text-center">
+        Chat with <span class="text-orange-400">GODDESS GIRLS</span> and<br/>
+        get <span class="text-orange-400">EXCLUSIVE CONTENTS</span>
+      </p>
 
-    <div class="swiper w-50 my-6">
-      <div id="idol-carousel-wrapper" class="swiper-wrapper">
+      <div class="swiper w-50 my-6">
+        <div id="idol-carousel-wrapper" class="swiper-wrapper">
+        </div>
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
       </div>
-      <div class="swiper-button-prev"></div>
-      <div class="swiper-button-next"></div>
-    </div>
-    <script type="text/javascript">
-      for (let i = 0; i < idols.length; i++) {
-        const idol = idols[i];
-        let idolSlideHtml = `
-          <div class="swiper-slide bg-linear-to-b from-gray-100 via-orange-400 to-pink-500 rounded-xl p-px" aria-index="${i}">
-            <div class="w-full aspect-2/3 rounded-xl">
-              <img src="${idol.photo_url}" class="w-full h-full object-cover rounded-xl"/>
-              <div class="fixed bottom-px bg-linear-to-t from-gray-900 to-transparent w-[calc(100%-2px)] rounded-bl-xl rounded-br-xl p-4">
-                <p class="font-bold text-gray-100">${idol.display_name}</p>
-                <p class="text-xs text-gray-300">${idol.bio}</p>
+      <script type="text/javascript">
+        for (let i = 0; i < idols.length; i++) {
+          const idol = idols[i];
+          let idolSlideHtml = `
+            <div class="swiper-slide bg-linear-to-b from-gray-100 via-orange-400 to-pink-500 rounded-xl p-px" aria-index="${i}">
+              <div class="w-full aspect-2/3 rounded-xl">
+                <img src="${idol.photo_url}" class="w-full h-full object-cover rounded-xl"/>
+                <div class="fixed bottom-px bg-linear-to-t from-gray-900 to-transparent w-[calc(100%-2px)] rounded-bl-xl rounded-br-xl p-4">
+                  <p class="font-bold text-gray-100">${idol.display_name}</p>
+                  <p class="text-xs text-gray-300">${idol.bio}</p>
+                </div>
               </div>
             </div>
-          </div>
-        `;
-        document.getElementById("idol-carousel-wrapper").innerHTML += idolSlideHtml;
-      }
-    </script>
+          `;
+          document.getElementById("idol-carousel-wrapper").innerHTML += idolSlideHtml;
+        }
+      </script>
 
-    <p class="font-extrabold text-center text-sm">Ready to get naughty?</p>
-    <p class="font-extrabold text-center text-sm">DIRTY talk. EXCLUSIVE pics. Absolutely WILD.</p>
+      <p class="font-extrabold text-center text-sm">Ready to get naughty?</p>
+      <p class="font-extrabold text-center text-sm">DIRTY talk. EXCLUSIVE pics. Absolutely WILD.</p>
 
-    <div class="w-full flex justify-center mt-4">
-      <a href="https://ivysoulmate.com" id="primary-cta" class="cta text-gray-200 no-underline bg-linear-to-l from-orange-400 to-pink-500 rounded-xl font-extrabold text-xl h-full px-8 py-2 outline outline-orange-400 outline-offset-2 italic">Join now!</a>
+      <div class="w-full flex justify-center mt-4">
+        <a href="https://ivysoulmate.com" id="primary-cta" class="cta text-gray-200 no-underline bg-linear-to-l from-orange-400 to-pink-500 rounded-xl font-extrabold text-xl h-full px-8 py-2 outline outline-orange-400 outline-offset-2 italic">Join now!</a>
+      </div>
     </div>
   </div>
 
