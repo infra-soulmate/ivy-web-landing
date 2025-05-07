@@ -142,7 +142,7 @@
   <!-- ========== FOOTER ========== -->
   <footer class="fixed bottom-0 mt-auto w-full">
     <!-- <div class="py-10 bg-linear-to-t from-gray-950/80 to-transparent text-gray-100 items-center flex flex-col"> -->
-    </div>
+    <!-- </div> -->
     <div class="max-w-[85rem] mx-auto px-4 sm:px-6 lg:px-8 justify-center flex pb-10 pt-20 bg-linear-to-t from-gray-950 to-transparent">
       <a href="https://ivysoulmate.com" class="cta px-10 py-3 text-rose-50 no-underline bg-rose-500 rounded font-bold">Explore Now For Free</a>
     </div>
@@ -159,14 +159,6 @@
       pagination: {
         el: ".swiper-pagination"
       },
-    });
-    swiper.on("activeIndexChange", function() {
-      const indicators = document.querySelectorAll(".swiper-indicator");
-      indicators.forEach(indicator => {
-        indicator.setAttribute("class","swiper-indicator h-1.5 w-1.5 rounded-full bg-white/75");
-      });
-      const activeIndicator = document.getElementById("swiper-indicator-"+this.activeIndex);
-      activeIndicator.setAttribute("class","swiper-indicator rounded-full bg-rose-400 h-2.5 w-2.5");
     });
   </script>
 

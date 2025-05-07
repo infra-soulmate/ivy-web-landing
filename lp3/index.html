@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="../src/output.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+  <link rel="icon" href="https://ivysoulmate.com/favicon.ico" type="image/x-icon" sizes="95x95">
+
+  <!-- Primary Meta Tags -->
+  <title>Ivy Soulmate</title>
+  <meta name="title" content="Ivy Soulmate" />
+  <meta name="description" content="The most advanced romance chatbot you've ever talked to." />
+
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://www.ivysoulmate.com/en" />
+  <meta property="og:title" content="Ivy Soulmate" />
+  <meta property="og:description" content="The most advanced romance chatbot you've ever talked to." />
+  <meta property="og:image" content="https://ivy-cdn.b-cdn.net/static/og.jpg" />
+
+  <!-- Twitter -->
+  <meta property="twitter:card" content="summary_large_image" />
+  <meta property="twitter:url" content="https://www.ivysoulmate.com/en" />
+  <meta property="twitter:title" content="Ivy Soulmate" />
+  <meta property="twitter:description" content="The most advanced romance chatbot you've ever talked to." />
+  <meta property="twitter:image" content="https://ivy-cdn.b-cdn.net/static/og.jpg" />
+</head>
+<body class="font-dm-sans text-gray-200">
+  <div class="w-screen h-screen bg-radial from-pink-900 to-gray-950 px-8 place-content-center">
+    <img src="../assets/logo.png" class="w-40 pb-3">
+    <p class="font-extrabold text-2xl">Are you...</p>
+    <p id="emotion-question" class="font-extrabold text-3xl"></p>
+    <div id="emotion-choices" class="flex py-6 place-content-evenly"></div>
+
+    <script type="text/javascript" src="data.json"></script>
+    <script type="text/javascript">
+      for (let i = 0; i < idols.length; i++) {
+        const idol = idols[i];
+        let emotionChoiceHtml = `<div id="emotion-choice-${i}" class="emotion-choice size-10 rounded-full bg-gray-800 border-t border-gray-100 place-content-center text-center">${idol.emoji}</div>`;
+        document.getElementById("emotion-choices").innerHTML += emotionChoiceHtml;
+      }
+    </script>
+
+    <p class="font-extrabold text-center">
+      Chat with <span class="text-orange-400">GODDESS GIRLS</span> and<br/>
+      get <span class="text-orange-400">EXCLUSIVE CONTENTS</span>
+    </p>
+
+    <div class="swiper w-50 my-6">
+      <div id="idol-carousel-wrapper" class="swiper-wrapper">
+      </div>
+      <div class="swiper-button-prev"></div>
+      <div class="swiper-button-next"></div>
+    </div>
+    <script type="text/javascript">
+      for (let i = 0; i < idols.length; i++) {
+        const idol = idols[i];
+        let idolSlideHtml = `
+          <div class="swiper-slide bg-linear-to-b from-gray-100 via-orange-400 to-pink-500 rounded-xl p-px" aria-index="${i}">
+            <div class="w-full aspect-2/3 rounded-xl">
+              <img src="${idol.photo_url}" class="w-full h-full object-cover rounded-xl"/>
+              <div class="fixed bottom-px bg-linear-to-t from-gray-900 to-transparent w-[calc(100%-2px)] rounded-bl-xl rounded-br-xl p-4">
+                <p class="font-bold text-gray-100">${idol.display_name}</p>
+                <p class="text-xs text-gray-300">${idol.bio}</p>
+              </div>
+            </div>
+          </div>
+        `;
+        document.getElementById("idol-carousel-wrapper").innerHTML += idolSlideHtml;
+      }
+    </script>
+
+    <p class="font-extrabold text-center text-sm">Ready to get naughty?</p>
+    <p class="font-extrabold text-center text-sm">DIRTY talk. EXCLUSIVE pics. Absolutely WILD.</p>
+
+    <div class="w-full flex justify-center mt-4">
+      <a href="https://ivysoulmate.com" id="primary-cta" class="cta text-gray-200 no-underline bg-linear-to-l from-orange-400 to-pink-500 rounded-xl font-extrabold text-xl h-full px-8 py-2 outline outline-orange-400 outline-offset-2 italic">Join now!</a>
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+  <script type="text/javascript">
+    function updateCtaQueryParams() {
+      const ctas = document.querySelectorAll(".cta");
+      ctas.forEach(cta => {
+        cta.href = (cta.href + window.location.search);
+      });
+    }
+    updateCtaQueryParams();
+  </script>
+
+  <script type="text/javascript">
+    const swiper = new Swiper('.swiper', {
+      navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+      },
+      pagination: {
+        el: ".swiper-pagination"
+      },
+      effect: "cards",
+      loop: true,
+      cardsEffect: {
+        perSlideOffset: 24,
+        rotate: false
+      },
+    });
+
+    updateEmotion();
+    
+    swiper.on("activeIndexChange", function() {
+      updateEmotion();
+    });
+
+    function updateEmotion() {
+      const index = parseInt(document.querySelector(".swiper-slide-visible").getAttribute("aria-index"));
+      const idol = idols[index];
+      document.getElementById("emotion-question").textContent = idol.emotion;
+      document.querySelectorAll(".emotion-choice")
+        .forEach(el => {
+          el.setAttribute("class","emotion-choice size-10 rounded-full border-t border-gray-100 place-content-center text-center bg-gray-800");
+        });
+      document.getElementById("emotion-choice-"+index)
+        .setAttribute("class","emotion-choice size-10 rounded-full border-t border-gray-100 place-content-center text-center bg-gray-100");
+      const primaryCta = document.getElementById("primary-cta");
+      primaryCta.textContent = `Join ${idol.display_name} now!`;
+      primaryCta.href = `https://ivysoulmate.com/idol/${idol.slug}`;
+      updateCtaQueryParams();
+    }
+  </script>
+
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-T0QE3560G5"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-T0QE3560G5');
+  </script>
+</body>
+</html>

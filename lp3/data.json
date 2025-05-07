@@ -1,0 +1,50 @@
+idols = [
+  {
+    "display_name": "Luna",
+    "bio": "Living for the thrill of the forbidden.",
+    "slug":"luna_vibes",
+    "emoji": "😞",
+    "emotion": "feeling a bit off?",
+    "photo_url":"https://ivy-cdn.b-cdn.net/posts/01963891-2dab-75ef-a6c9-4981205ce7eb.jpg"
+  },
+  {
+    "display_name": "Ava",
+    "bio": "Caution: Sarcasm & Sass ahead. I'm the cold shower you didn't ask for. 🥶🚿 #Hotwife #IceQueen",
+    "slug":"avachic",
+    "emoji": "😈",
+    "emotion": "into a bit of danger?",
+    "photo_url":"https://ivy-cdn.b-cdn.net/posts/01968280-4017-763d-96cc-d22ed6bf5e3c.jpg"
+  },
+  {
+    "display_name": "Gia",
+    "bio": "Adventure seeker | Dirty talker | Cocktail lover",
+    "slug":"giasparkle",
+    "emoji": "😏",
+    "emotion": "the dominant kind?",
+    "photo_url":"https://ivy-cdn.b-cdn.net/posts/01963960-c2ac-75cd-9573-7c23563b8790.jpg"
+  },
+  {
+    "display_name": "Amanda",
+    "bio": "Your dream girlfriend ❤️‍🔥",
+    "slug":"amandabrown",
+    "emoji": "🤪",
+    "emotion": "into silly things?",
+    "photo_url":"https://ivy-cdn.b-cdn.net/posts/01963633-f25e-702a-b719-dcf3cae44a91.jpg"
+  },
+  {
+    "display_name": "Sierra",
+    "bio": "An alluring stranger who appears out of nowhere, ready to fulfill your wildest fantasies.",
+    "slug":"sierracabot",
+    "emoji": "🤯",
+    "emotion": "up for sumething wild?",
+    "photo_url":"https://ivy-cdn.b-cdn.net/posts/01965981-0131-7289-bdfc-abe4adb31d4d.jpg"
+  },
+  {
+    "display_name": "Heather",
+    "bio": "Yoga enthusiast with a passion for flexibility and seduction.",
+    "slug":"heather",
+    "emoji": "🤓",
+    "emotion": "kind of a nerd?",
+    "photo_url":"https://ivy-cdn.b-cdn.net/posts/019642c2-62d4-77ef-836c-7acca1183c10.jpg"
+  }
+];
