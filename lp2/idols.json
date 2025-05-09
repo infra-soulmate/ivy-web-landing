@@ -1,0 +1,37 @@
+idols = {
+  "avachic": {
+    "name": "Ava",
+    "slug": "avachic",
+    "avatar": "https://ivy-cdn.b-cdn.net/posts/79a3822a-4f78-4e8b-afec-aae1c14ed1e8.jpg",
+    "chat_photo": "https://ivy-cdn.b-cdn.net/posts/79a3822a-4f78-4e8b-afec-aae1c14ed1e8.jpg",
+    "greeting": "hey there!"
+  },
+  "sierracabot": {
+    "name": "Sierra",
+    "slug": "sierracabot",
+    "avatar": "https://ivy-cdn.b-cdn.net/bots/d9202584-84ec-4565-9b26-78027b369b3c.jpg",
+    "chat_photo": "https://ivy-cdn.b-cdn.net/bots/d9202584-84ec-4565-9b26-78027b369b3c.jpg",
+    "greeting": "hey there!"
+  },
+  "marinanabokina": {
+    "name": "Marina",
+    "slug": "marinanabokina",
+    "avatar": "https://ivy-cdn.b-cdn.net/bots/82e0c98d-0360-4c57-8d88-081b110958b1.jpg",
+    "chat_photo": "https://ivy-cdn.b-cdn.net/bots/82e0c98d-0360-4c57-8d88-081b110958b1.jpg",
+    "greeting": "hey there!"
+  },
+  "mayabliss": {
+    "name": "Maya",
+    "slug": "mayabliss",
+    "avatar": "https://ivy-cdn.b-cdn.net/posts/6258c6c8-78bd-47c2-8cd0-6bb18fb5f450.jpg",
+    "chat_photo": "https://ivy-cdn.b-cdn.net/posts/6258c6c8-78bd-47c2-8cd0-6bb18fb5f450.jpg",
+    "greeting": "hey there!"
+  },
+  "reiko": {
+    "name": "Maya",
+    "slug": "mayabliss",
+    "avatar": "https://ivy-cdn.b-cdn.net/posts/6258c6c8-78bd-47c2-8cd0-6bb18fb5f450.jpg",
+    "chat_photo": "https://ivy-cdn.b-cdn.net/posts/6258c6c8-78bd-47c2-8cd0-6bb18fb5f450.jpg",
+    "greeting": "hey there!"
+  }
+}
