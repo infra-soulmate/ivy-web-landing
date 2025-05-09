@@ -259,6 +259,9 @@
   .bottom-px {
     bottom: 1px;
   }
+  .left-0 {
+    left: calc(var(--spacing) * 0);
+  }
   .-z-10 {
     z-index: calc(10 * -1);
   }
@@ -310,8 +313,14 @@
   .mt-5 {
     margin-top: calc(var(--spacing) * 5);
   }
+  .mt-10 {
+    margin-top: calc(var(--spacing) * 10);
+  }
   .mt-14 {
     margin-top: calc(var(--spacing) * 14);
+  }
+  .mt-30 {
+    margin-top: calc(var(--spacing) * 30);
   }
   .mt-auto {
     margin-top: auto;
@@ -637,6 +646,12 @@
   .bg-gray-950 {
     background-color: var(--color-gray-950);
   }
+  .bg-gray-950\/30 {
+    background-color: color-mix(in srgb, oklch(13% 0.028 261.692) 30%, transparent);
+    @supports (color: color-mix(in lab, red, red)) {
+      background-color: color-mix(in oklab, var(--color-gray-950) 30%, transparent);
+    }
+  }
   .bg-gray-950\/40 {
     background-color: color-mix(in srgb, oklch(13% 0.028 261.692) 40%, transparent);
     @supports (color: color-mix(in lab, red, red)) {
@@ -648,6 +663,9 @@
     @supports (color: color-mix(in lab, red, red)) {
       background-color: color-mix(in oklab, var(--color-gray-950) 60%, transparent);
     }
+  }
+  .bg-rose-400 {
+    background-color: var(--color-rose-400);
   }
   .bg-rose-500 {
     background-color: var(--color-rose-500);
@@ -885,6 +903,9 @@
   }
   .pb-4 {
     padding-bottom: calc(var(--spacing) * 4);
+  }
+  .pb-6 {
+    padding-bottom: calc(var(--spacing) * 6);
   }
   .pb-10 {
     padding-bottom: calc(var(--spacing) * 10);

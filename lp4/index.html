@@ -3,7 +3,11 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link href="../src/output.css" rel="stylesheet">
+  <script type="text/javascript">
+    document.write(`
+      <link href="../src/output.css?v=${Date.now()}" rel="stylesheet">
+    `);
+  </script>
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
   <link rel="icon" href="https://ivysoulmate.com/favicon.ico" type="image/x-icon" sizes="95x95">
 
@@ -26,10 +30,10 @@
   <meta property="twitter:description" content="The most advanced romance chatbot you've ever talked to." />
   <meta property="twitter:image" content="https://ivy-cdn.b-cdn.net/static/og.jpg" />
 
-  <!-- <script>
+  <script>
     !function(t,e){var o,n,p,r;e.__SV||(window.posthog=e,e._i=[],e.init=function(i,s,a){function g(t,e){var o=e.split(".");2==o.length&&(t=t[o[0]],e=o[1]),t[e]=function(){t.push([e].concat(Array.prototype.slice.call(arguments,0)))}}(p=t.createElement("script")).type="text/javascript",p.crossOrigin="anonymous",p.async=!0,p.src=s.api_host.replace(".i.posthog.com","-assets.i.posthog.com")+"/static/array.js",(r=t.getElementsByTagName("script")[0]).parentNode.insertBefore(p,r);var u=e;for(void 0!==a?u=e[a]=[]:a="posthog",u.people=u.people||[],u.toString=function(t){var e="posthog";return"posthog"!==a&&(e+="."+a),t||(e+=" (stub)"),e},u.people.toString=function(){return u.toString(1)+".people (stub)"},o="init capture register register_once register_for_session unregister unregister_for_session getFeatureFlag getFeatureFlagPayload isFeatureEnabled reloadFeatureFlags updateEarlyAccessFeatureEnrollment getEarlyAccessFeatures on onFeatureFlags onSessionId getSurveys getActiveMatchingSurveys renderSurvey canRenderSurvey getNextSurveyStep identify setPersonProperties group resetGroups setPersonPropertiesForFlags resetPersonPropertiesForFlags setGroupPropertiesForFlags resetGroupPropertiesForFlags reset get_distinct_id getGroups get_session_id get_session_replay_url alias set_config startSessionRecording stopSessionRecording sessionRecordingStarted captureException loadToolbar get_property getSessionProperty createPersonProfile opt_in_capturing opt_out_capturing has_opted_in_capturing has_opted_out_capturing clear_opt_in_out_capturing debug".split(" "),n=0;n<o.length;n++)g(u,o[n]);e._i.push([i,s,a])},e.__SV=1)}(document,window.posthog||[]);
     posthog.init('phc_eVFyBmkIuJvwMhwmtGYdFZRL3ns7nC9pCNOgB94wwPM', {api_host: 'https://us.i.posthog.com'})
-</script> -->
+</script>
 </head>
 <body class="bg-gray-900 font-dm-sans text-gray-200">
   <div class="flex flex-col bg-zinc-950">
@@ -112,7 +116,7 @@
                         <div class="relative z-0 h-full w-full overflow-hidden">
                           <div class="relative -z-10 h-full w-full">
                             <img alt="${post.caption}" loading="lazy" decoding="async" data-nimg="fill" class="!static w-full h-full object-cover object-center" src="${media.url}">
-                            </div>
+                          </div>
                         </div>
                       </div>
               `;
@@ -120,13 +124,18 @@
           });
 
           postHTML += `
-                      <div class="swiper-slide" style="width: 768px;">
-                        <div class="flex h-full w-full flex-col items-center gap-6 bg-gray-900/75 px-6 py-4 text-center place-content-center">
+                      <div class="swiper-slide">
+                        <div class="relative z-0 h-full w-full overflow-hidden">
+                          <div class="relative -z-10 h-full w-full">
+                            <img alt="${idol.name}" loading="lazy" decoding="async" data-nimg="fill" class="!static w-full h-full object-cover object-center" src="${idol.avatar}">
+                          </div>
+                        </div>
+                        <div class="fixed top-0 left-0 h-full w-full flex-col items-center gap-6 bg-gray-950/40 backdrop-blur-sm px-6 py-4 text-center place-content-center">
                           <div>
                             <h3 class="pb-1 text-lg font-bold text-primary">Love Her Photos?</h3>
-                            <p class="text-sm">Explore More Hot Albums and Videos From&nbsp;<span class="font-bold">${idol.name}</span></p>
+                            <p class="text-sm px-4">Explore More Hot Albums and Videos From&nbsp;<span class="font-bold">${idol.name}</span></p>
                           </div>
-                          <button onclick="pushGaEvent(this, 'post_end_slide_visit_click','https://ivysoulmate.com/idol/${idol.slug}')" class="cta cursor-pointer text-rose-50 no-underline bg-rose-500 rounded-full font-semibold text-sm px-4 py-2">
+                          <button onclick="pushGaEvent(this, 'post_end_slide_visit_click','https://ivysoulmate.com/idol/${idol.slug}')" class="cta cursor-pointer text-rose-50 no-underline bg-rose-400 rounded-full font-semibold text-sm px-4 py-2 mt-4">
                             😘 Visit ${idol.name}
                           </button>
                         </div>
@@ -197,6 +206,7 @@
       updateChatIdolAvatar();
       updateChatIdolName();
       updateChatGreeting();
+      document.getElementById("chat-input").value = "";
       document.getElementById("chat-window").classList.remove("invisible");
     }
 
@@ -278,7 +288,7 @@
       }
     </script>
     <form onsubmit="return submitChat();" class="w-full fixed bottom-0 bg-gray-900 border-t border-gray-800 p-3 flex gap-3 place-items-center">
-      <input type="text" oninput="this.parentNode.dataset.value = this.value" rows="1" name="" placeholder="Send a message..." class="bg-gray-700 px-4 py-2 rounded-full w-screen border border-gray-800 focus:border-rose-400 outline-none" />
+      <input type="text" id="chat-input" oninput="this.parentNode.dataset.value = this.value" rows="1" name="" placeholder="Send a message..." class="bg-gray-700 px-4 py-2 rounded-full w-screen border border-gray-800 focus:border-rose-400 outline-none" />
       <button type="submit" class="cta cursor-pointer flex items-center justify-center rounded-full h-full p-2 font-bold text-sm text-rose-50 bg-rose-500">
         <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-send-icon lucide-send"><path d="M14.536 21.686a.5.5 0 0 0 .937-.024l6.5-19a.496.496 0 0 0-.635-.635l-19 6.5a.5.5 0 0 0-.024.937l7.93 3.18a2 2 0 0 1 1.112 1.11z"/><path d="m21.854 2.147-10.94 10.939"/></svg>
       </button>
@@ -287,8 +297,8 @@
   <!-- ========== END CHAT MODAL ========== -->
 
   <!-- ========== AUTH MODAL ========== -->
-  <div id="auth-modal" class="fixed top-0 z-20 w-full h-screen  backdrop-blur-xs mt-14 place-content-center grid invisible">
-    <div class="bg-linear-to-b from-orange-400 to-pink-500 rounded-xl p-px">
+  <div id="auth-modal" class="fixed top-0 z-20 w-full h-screen  backdrop-blur-xs mt-14 justify-center grid invisible">
+    <div class="bg-linear-to-b from-orange-400 to-pink-500 rounded-xl p-px h-fit mt-30">
       <div class="w-full bg-gray-800 p-8 rounded-xl grid justify-items-center">
         <img alt="logo" loading="lazy" decoding="async" data-nimg="1" class="object-contain w-40" src="../assets/logo.png" style="color: transparent;">
         <p class="font-semibold text-xl p-8">
@@ -296,12 +306,12 @@
         </p>
         <p class="text-gray-400 text-sm">Create an Account to start chatting</p>
         <div class="w-full pt-8 grid items-center">
-          <button onclick="signIn('google')" class="cursor-pointer flex justify-between bg-white border border-gray-300 rounded-lg shadow-md w-full px-6 py-2 text-sm font-medium text-gray-800 hover:bg-gray-200 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-500 gap-4">
+          <button onclick="signIn('google')" class="cursor-pointer flex justify-between items-center bg-white border border-gray-300 rounded-lg shadow-md w-full px-6 py-2 text-sm font-medium text-gray-800 hover:bg-gray-200 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-500 gap-4">
             <img src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjQiIGhlaWdodD0iMjQiIHZpZXdCb3g9IjAgMCAyNCAyNCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHBhdGggZmlsbC1ydWxlPSJldmVub2RkIiBjbGlwLXJ1bGU9ImV2ZW5vZGQiIGQ9Ik0yMy41MiAxMi4yNzI5QzIzLjUyIDExLjQyMiAyMy40NDM2IDEwLjYwMzggMjMuMzAxOCA5LjgxODM2SDEyVjE0LjQ2MDJIMTguNDU4MkMxOC4xOCAxNS45NjAyIDE3LjMzNDUgMTcuMjMxMSAxNi4wNjM2IDE4LjA4MlYyMS4wOTI5SDE5Ljk0MThDMjIuMjEwOSAxOS4wMDM4IDIzLjUyIDE1LjkyNzUgMjMuNTIgMTIuMjcyOVoiIGZpbGw9IiM0Mjg1RjQiLz4KPHBhdGggZmlsbC1ydWxlPSJldmVub2RkIiBjbGlwLXJ1bGU9ImV2ZW5vZGQiIGQ9Ik0xMiAyMy45OTk5QzE1LjI0IDIzLjk5OTkgMTcuOTU2NCAyMi45MjU0IDE5Ljk0MTggMjEuMDkyNkwxNi4wNjM2IDE4LjA4MTdDMTQuOTg5MSAxOC44MDE3IDEzLjYxNDUgMTkuMjI3MiAxMiAxOS4yMjcyQzguODc0NTUgMTkuMjI3MiA2LjIyOTA5IDE3LjExNjMgNS4yODU0NiAxNC4yNzk5SDEuMjc2MzdWMTcuMzg5QzMuMjUwOTEgMjEuMzEwOCA3LjMwOTA5IDIzLjk5OTkgMTIgMjMuOTk5OVoiIGZpbGw9IiMzNEE4NTMiLz4KPHBhdGggZmlsbC1ydWxlPSJldmVub2RkIiBjbGlwLXJ1bGU9ImV2ZW5vZGQiIGQ9Ik01LjI4NTQ1IDE0LjI3OThDNS4wNDU0NSAxMy41NTk4IDQuOTA5MDkgMTIuNzkwNyA0LjkwOTA5IDExLjk5OThDNC45MDkwOSAxMS4yMDg5IDUuMDQ1NDUgMTAuNDM5OCA1LjI4NTQ1IDkuNzE5ODFWNi42MTA3MkgxLjI3NjM2QzAuNDYzNjM2IDguMjMwNzIgMCAxMC4wNjM0IDAgMTEuOTk5OEMwIDEzLjkzNjIgMC40NjM2MzYgMTUuNzY4OSAxLjI3NjM2IDE3LjM4ODlMNS4yODU0NSAxNC4yNzk4WiIgZmlsbD0iI0ZCQkMwNSIvPgo8cGF0aCBmaWxsLXJ1bGU9ImV2ZW5vZGQiIGNsaXAtcnVsZT0iZXZlbm9kZCIgZD0iTTEyIDQuNzcyNzNDMTMuNzYxOCA0Ljc3MjczIDE1LjM0MzYgNS4zNzgxOCAxNi41ODczIDYuNTY3MjdMMjAuMDI5MSAzLjEyNTQ1QzE3Ljk1MDkgMS4xODkwOSAxNS4yMzQ1IDAgMTIgMEM3LjMwOTA5IDAgMy4yNTA5MSAyLjY4OTA5IDEuMjc2MzcgNi42MTA5MUw1LjI4NTQ2IDkuNzJDNi4yMjkwOSA2Ljg4MzY0IDguODc0NTUgNC43NzI3MyAxMiA0Ljc3MjczWiIgZmlsbD0iI0VBNDMzNSIvPgo8L3N2Zz4K" alt="google" class="gDA0X_icon">
             <span>Continue with Google</span>
             <span></span>
           </button>
-          <button onclick="signIn('x')" class="mt-4 cursor-pointer flex justify-between bg-white border border-gray-300 rounded-lg shadow-md w-full px-6 py-2 text-sm font-medium text-gray-800 hover:bg-gray-200 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-500 gap-4">
+          <button onclick="signIn('x')" class="mt-4 cursor-pointer flex justify-between items-center bg-white border border-gray-300 rounded-lg shadow-md w-full px-6 py-2 text-sm font-medium text-gray-800 hover:bg-gray-200 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-500 gap-4">
             <img src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjQiIGhlaWdodD0iMjQiIHZpZXdCb3g9IjAgMCAyNCAyNCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPGcgY2xpcC1wYXRoPSJ1cmwoI2NsaXAwXzExOTY0XzI1MTYzKSI+CjxwYXRoIGQ9Ik0xOC44ODAxIDFIMjIuNTYwMUwxNC40ODAxIDEwLjJMMjMuOTIwMSAyMi42OEgxNi41MTIxTDEwLjcxMjEgMTUuMDk2TDQuMDcyMTEgMjIuNjhIMC4zOTIxMDlMOC45NTIxMSAxMi44NEwtMC4wODc4OTA2IDFINy41MDQxMUwxMi43NDQxIDcuOTI4TDE4Ljg4MDEgMVpNMTcuNTkyMSAyMC41MkgxOS42MzIxTDYuNDMyMTEgMy4wOEg0LjI0MDExTDE3LjU5MjEgMjAuNTJaIiBmaWxsPSJibGFjayIvPgo8L2c+CjxkZWZzPgo8Y2xpcFBhdGggaWQ9ImNsaXAwXzExOTY0XzI1MTYzIj4KPHJlY3Qgd2lkdGg9IjI0IiBoZWlnaHQ9IjIxLjY4IiBmaWxsPSJ3aGl0ZSIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoMCAxKSIvPgo8L2NsaXBQYXRoPgo8L2RlZnM+Cjwvc3ZnPgo=" alt="x" class="gDA0X_icon">
             <span>Continue with X</span>
             <span></span>
