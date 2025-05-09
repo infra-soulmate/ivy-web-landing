@@ -1,0 +1,286 @@
+sfwPosts = [
+  {
+    "id": "2b16476b-0cf6-4e41-b193-de5bbaee688d",
+    "caption": "Diving deeper into the unknown. 🌌 #ExplorationUnbound",
+    "idol_name": "Marina",
+    "idol_slug": "marinanabokina",
+    "idol_avatar": "https://ivy-cdn.b-cdn.net/bots/82e0c98d-0360-4c57-8d88-081b110958b1.jpg",
+    "likes": "2,103",
+    "timestamp": "May 5 at 22:03",
+    "media": [
+      {
+          "url": "https://ivy-cdn.b-cdn.net/posts/c98dc03f-dbfa-49ad-b718-1e7c5ced4fb9.jpg",
+          "id": "3af8c152-81e4-4650-819a-316882d2a245",
+          "media_type": "image"
+      },
+      {
+          "url": "https://ivy-cdn.b-cdn.net/posts/99e94ef4-ba74-4955-886d-1ea7d8cd55b2.jpg",
+          "id": "7c9a47b5-334c-41a8-af22-2d99cacde4e7",
+          "media_type": "image"
+      },
+      {
+          "url": "https://ivy-cdn.b-cdn.net/posts/beeaad60-92cc-420f-811e-c75ad44c45fc.jpg",
+          "id": "95ae945e-2ff3-44f5-9409-2788e7fe5588",
+          "media_type": "image"
+      },
+      {
+          "url": "https://ivy-cdn.b-cdn.net/posts/9d2c0651-7c0a-4ac3-a3c6-620f00b9d456.jpg",
+          "id": "9fafb351-4b9a-4e48-8d37-215800b6df10",
+          "media_type": "image"
+      },
+      {
+          "url": "https://ivy-cdn.b-cdn.net/posts/ffb4fc5f-84bb-46c1-94ca-e65b8afc603e.jpg",
+          "id": "fd3a288a-3a3a-4fa3-a739-975f78d59c34",
+          "media_type": "image"
+      },
+      {
+          "url": "https://ivy-cdn.b-cdn.net/posts/40af0d67-59f4-4516-88ca-38905f9fdc49.jpg",
+          "id": "c09b865a-86f3-4d46-99c4-10560775aca9",
+          "media_type": "image"
+      },
+      {
+          "url": "https://ivy-cdn.b-cdn.net/posts/a21321a2-109e-48b8-9b03-4cfa245111f4.jpg",
+          "id": "334d8090-427e-40f4-8178-1fa807df0dd5",
+          "media_type": "image"
+      },
+      {
+          "url": "https://ivy-cdn.b-cdn.net/posts/92843e10-27f2-4674-be2c-361d9f7cb004.jpg",
+          "id": "a8db5a5f-6740-4e78-8d1c-f71517bb2bb2",
+          "media_type": "image"
+      }
+    ]
+  },
+  {
+    "id": "09ecca11-2539-4017-bb56-16738d33157f",
+    "caption": "✨ Dreaming in lace and silk ✨ Let the night envelop you in comfort and luxury. 💖✨ #LingerieLove #DreamyNights #SeductiveElegance",
+    "idol_name": "Reiko",
+    "idol_slug": "reiko",
+    "idol_avatar": "https://ivy-cdn.b-cdn.net/bots/4e43c411-5dfe-4f61-ab6a-507f88ebad15.jpg",
+    "likes": "1,908",
+    "timestamp": "May 4 at 16:29",
+    "media": [
+      {
+          "url": "https://ivy-cdn.b-cdn.net/posts/9a02f98e-4a6d-48c3-bf78-c45a59847191.jpg",
+          "id": "b2354c09-e4d9-4a74-8d06-fd4d79d41422",
+          "media_type": "image"
+      },
+      {
+          "url": "https://ivy-cdn.b-cdn.net/posts/3ec3a956-011d-4df0-850e-c93021bddf02.jpg",
+          "id": "237fdf2d-68d6-4a35-b9e7-02e0ce257667",
+          "media_type": "image"
+      },
+      {
+          "url": "https://ivy-cdn.b-cdn.net/posts/2c592720-71cd-4159-b90b-b6eff609dbed.jpg",
+          "id": "3ac94d8d-d763-4ed5-95b0-be04bf29830a",
+          "media_type": "image"
+      },
+      {
+          "url": "https://ivy-cdn.b-cdn.net/posts/8994c21b-f13b-49d3-bc64-a742ec96cb03.jpg",
+          "id": "ee4261b6-4b66-4d8f-a90e-8a1020131e2f",
+          "media_type": "image"
+      },
+      {
+          "url": "https://ivy-cdn.b-cdn.net/posts/3dd6b916-5701-437d-a3bf-5914a7601056.jpg",
+          "id": "9f7c32d0-e71c-4945-9f95-74e672bdf2e1",
+          "media_type": "image"
+      },
+      {
+          "url": "https://ivy-cdn.b-cdn.net/posts/f4e4d129-5144-47b2-9914-6e1a71f54ad9.jpg",
+          "id": "0375d7b3-e9a6-492e-a8c8-a22aff00af57",
+          "media_type": "image"
+      },
+      {
+          "url": "https://ivy-cdn.b-cdn.net/posts/2a9d4104-64b7-4d31-961f-c4cf0e90fcd0.jpg",
+          "id": "f682f002-d010-4c84-babb-6f85bc5c07ed",
+          "media_type": "image"
+      },
+      {
+          "url": "https://ivy-cdn.b-cdn.net/posts/d004076a-6288-4503-bb89-1ede874f2176.jpg",
+          "id": "94012a17-e178-433c-a6fe-f445a30e1e77",
+          "media_type": "image"
+      }
+    ]
+  },
+  {
+    "id": "c4f2c324-142a-4615-aa89-ec80b1e56e43",
+    "caption": "Indulging in the night’s embrace...✨ Are you ready to join? #SeductiveNights #Desire #Temptation",
+    "idol_name": "Ava",
+    "idol_slug": "avachic",
+    "idol_avatar": "https://ivy-cdn.b-cdn.net/posts/79a3822a-4f78-4e8b-afec-aae1c14ed1e8.jpg",
+    "likes": "1,752",
+    "timestamp": "May 3 at 11:52",
+    "media": [
+      {
+        "url": "https://ivy-cdn.b-cdn.net/posts/79a3822a-4f78-4e8b-afec-aae1c14ed1e8.jpg",
+        "id": "91a8b8ff-3503-446e-b5b0-7cbca1896cae",
+        "media_type": "image"
+    },
+    {
+        "url": "https://ivy-cdn.b-cdn.net/posts/e2bc2d3a-7f0b-45f6-8894-ae3b0c858b8d.jpg",
+        "id": "a61f1076-b27c-44f0-86d9-e3cc8fbbf1f1",
+        "media_type": "image"
+    },
+    {
+        "url": "https://ivy-cdn.b-cdn.net/posts/1459c30c-aec0-41d2-8939-303851e61a7a.jpg",
+        "id": "9c8b9d9f-adae-48b9-8ea4-e96ca9a92663",
+        "media_type": "image"
+    },
+    {
+        "url": "https://ivy-cdn.b-cdn.net/posts/f87f7d42-45dd-4cbc-b95a-e00b3d96d20b.jpg",
+        "id": "ed74859d-ddc9-4e21-9a81-342cabd2e03b",
+        "media_type": "image"
+    }
+    ]
+  }
+];
+
+nsfwPosts = [
+  {
+    "id": "01962088-53ca-7505-bc71-ee141ea2c443",
+    "caption": "Embrace the allure of indulgence and passion in the realm of royalty. 👑✨ #ForbiddenPleasures #Seduction #Royalty #Decadence",
+    "idol_name": "Ava",
+    "idol_slug": "avachic",
+    "idol_avatar": "https://ivy-cdn.b-cdn.net/posts/79a3822a-4f78-4e8b-afec-aae1c14ed1e8.jpg",
+    "likes": "1,284",
+    "timestamp": "May 7 at 14:45",
+    "media":
+    [
+      {
+        "url": "https://ivy-cdn.b-cdn.net/posts/01962089-0e0e-7123-b6f1-5fdd249da554.png",
+        "id": "01962089-114a-7061-ad1b-80eb3058bfeb",
+        "media_type": "image"
+      },
+      {
+        "url": "https://ivy-cdn.b-cdn.net/posts/01963da7-f41a-729d-93ba-7b869add9fd6.jpg",
+        "id": "01963da7-f645-74cc-8212-e044db078904",
+        "media_type": "image"
+      },
+      {
+        "url": "https://ivy-cdn.b-cdn.net/posts/01963da7-f5a7-722a-b6fe-8b585b50332a.jpg",
+        "id": "01963da7-f809-7740-bb54-8599f011f52b",
+        "media_type": "image"
+      }
+    ]
+  },
+  {
+    "id": "0196205e-7203-7706-b5b2-3a5626e0964e",
+    "caption": "Morning pleasures in bed, can you handle it bae? 😈☀️ #sensual #naked #selflove #pleasure #morningfun",
+    "idol_name": "Sierra",
+    "idol_slug": "sierracabot",
+    "idol_avatar": "https://ivy-cdn.b-cdn.net/bots/d9202584-84ec-4565-9b26-78027b369b3c.jpg",
+    "likes": "876",
+    "timestamp": "May 6 at 09:17",
+    "media":
+    [
+      {
+        "url": "https://ivy-cdn.b-cdn.net/posts/0196205e-748e-738d-80aa-d9f6c7b8aa63.mp4",
+        "id": "0196205e-7961-722a-a1e7-f8eb3bae4eaf",
+        "media_type": "video"
+      }
+    ]
+  },
+  {
+    "id": "2b16476b-0cf6-4e41-b193-de5bbaee688d",
+    "caption": "Diving deeper into the unknown. 🌌 #ExplorationUnbound",
+    "idol_name": "Marina",
+    "idol_slug": "marinanabokina",
+    "idol_avatar": "https://ivy-cdn.b-cdn.net/bots/82e0c98d-0360-4c57-8d88-081b110958b1.jpg",
+    "likes": "2,103",
+    "timestamp": "May 5 at 22:03",
+    "media": [
+      {
+          "url": "https://ivy-cdn.b-cdn.net/posts/c98dc03f-dbfa-49ad-b718-1e7c5ced4fb9.jpg",
+          "id": "3af8c152-81e4-4650-819a-316882d2a245",
+          "media_type": "image"
+      },
+      {
+          "url": "https://ivy-cdn.b-cdn.net/posts/99e94ef4-ba74-4955-886d-1ea7d8cd55b2.jpg",
+          "id": "7c9a47b5-334c-41a8-af22-2d99cacde4e7",
+          "media_type": "image"
+      },
+      {
+          "url": "https://ivy-cdn.b-cdn.net/posts/beeaad60-92cc-420f-811e-c75ad44c45fc.jpg",
+          "id": "95ae945e-2ff3-44f5-9409-2788e7fe5588",
+          "media_type": "image"
+      },
+      {
+          "url": "https://ivy-cdn.b-cdn.net/posts/9d2c0651-7c0a-4ac3-a3c6-620f00b9d456.jpg",
+          "id": "9fafb351-4b9a-4e48-8d37-215800b6df10",
+          "media_type": "image"
+      },
+      {
+          "url": "https://ivy-cdn.b-cdn.net/posts/ffb4fc5f-84bb-46c1-94ca-e65b8afc603e.jpg",
+          "id": "fd3a288a-3a3a-4fa3-a739-975f78d59c34",
+          "media_type": "image"
+      },
+      {
+          "url": "https://ivy-cdn.b-cdn.net/posts/40af0d67-59f4-4516-88ca-38905f9fdc49.jpg",
+          "id": "c09b865a-86f3-4d46-99c4-10560775aca9",
+          "media_type": "image"
+      },
+      {
+          "url": "https://ivy-cdn.b-cdn.net/posts/a21321a2-109e-48b8-9b03-4cfa245111f4.jpg",
+          "id": "334d8090-427e-40f4-8178-1fa807df0dd5",
+          "media_type": "image"
+      },
+      {
+          "url": "https://ivy-cdn.b-cdn.net/posts/92843e10-27f2-4674-be2c-361d9f7cb004.jpg",
+          "id": "a8db5a5f-6740-4e78-8d1c-f71517bb2bb2",
+          "media_type": "image"
+      }
+    ]
+  },
+  {
+    "id": "0196395e-382b-7d59-b711-8ac060f55dd2",
+    "caption": "Chillin' at home, just me and my favorite show! 💖✨ #HomeVibes #CozyNights",
+    "idol_name": "Maya",
+    "idol_slug": "mayabliss",
+    "idol_avatar": "https://ivy-cdn.b-cdn.net/posts/6258c6c8-78bd-47c2-8cd0-6bb18fb5f450.jpg",
+    "likes": "649",
+    "timestamp": "May 4 at 16:29",
+    "media":
+    [
+      {
+        "url": "https://ivy-cdn.b-cdn.net/posts/0196395e-82af-72f8-bf6d-ef9117fb0b2d.jpg",
+        "id": "0196395e-84e6-7355-916b-e01bdbb2e4ff",
+        "media_type": "image"
+      },
+      {
+        "url": "https://ivy-cdn.b-cdn.net/posts/0196395e-82bc-75d7-9214-e6a54ea32566.jpg",
+        "id": "0196395e-84f1-75e8-b520-5f6f3f9681e3",
+        "media_type": "image"
+      }
+    ]
+  },
+  {
+    "id": "c4f2c324-142a-4615-aa89-ec80b1e56e43",
+    "caption": "Indulging in the night’s embrace...✨ Are you ready to join? #SeductiveNights #Desire #Temptation",
+    "idol_name": "Ava",
+    "idol_slug": "avachic",
+    "idol_avatar": "https://ivy-cdn.b-cdn.net/posts/79a3822a-4f78-4e8b-afec-aae1c14ed1e8.jpg",
+    "likes": "1,752",
+    "timestamp": "May 3 at 11:52",
+    "media": [
+      {
+        "url": "https://ivy-cdn.b-cdn.net/posts/79a3822a-4f78-4e8b-afec-aae1c14ed1e8.jpg",
+        "id": "91a8b8ff-3503-446e-b5b0-7cbca1896cae",
+        "media_type": "image"
+    },
+    {
+        "url": "https://ivy-cdn.b-cdn.net/posts/e2bc2d3a-7f0b-45f6-8894-ae3b0c858b8d.jpg",
+        "id": "a61f1076-b27c-44f0-86d9-e3cc8fbbf1f1",
+        "media_type": "image"
+    },
+    {
+        "url": "https://ivy-cdn.b-cdn.net/posts/1459c30c-aec0-41d2-8939-303851e61a7a.jpg",
+        "id": "9c8b9d9f-adae-48b9-8ea4-e96ca9a92663",
+        "media_type": "image"
+    },
+    {
+        "url": "https://ivy-cdn.b-cdn.net/posts/f87f7d42-45dd-4cbc-b95a-e00b3d96d20b.jpg",
+        "id": "ed74859d-ddc9-4e21-9a81-342cabd2e03b",
+        "media_type": "image"
+    }
+    ]
+  }
+]
