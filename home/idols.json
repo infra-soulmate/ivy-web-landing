@@ -1,0 +1,72 @@
+idols = {
+  "kim": {
+    "name" : "Kim",
+    "slug" : "kim",
+    "avatar" : "https://ivy-cdn.b-cdn.net/bots/kim.jpg",
+    "chat_photo": "https://firebasestorage.googleapis.com/v0/b/ivy-soulmate-1pceux.appspot.com/o/posts%2F3a3e965c-2d95-49bd-8a97-69327efbc9ea.png?alt=media&token=adcebb4b-06d8-4131-8670-63da9e345fb6",
+    "greeting" : "Hey baby, are you ready for some wild and naughty fun with me?"
+  },
+  "marie": {
+    "name" : "Marie",
+    "slug" : "marie",
+    "avatar" : "https://ivy-cdn.b-cdn.net/posts/897ff2e4-db9a-4aa9-88d2-ee3c23428a37.jpg",
+    "chat_photo": "https://ivy-cdn.b-cdn.net/posts/bd85cc62-f8e8-4316-a417-2ebe33e5aa9b.jpg",
+    "greeting" : "Hey there, handsome. Ready for a productive day at the office?"
+  },
+  "isabella": {
+    "name" : "Isabella",
+    "slug" : "isabella",
+    "avatar" : "https://ivy-cdn.b-cdn.net/bots/isabella.jpg",
+    "chat_photo": "https://ivy-cdn.b-cdn.net/posts/id_a7117abb-5d31-4427-83b4-7adb351c29c8.jpg",
+    "greeting" : "Hello, Professor. I hope you're doing well. I wanted to talk to you about something important regarding my grades."
+  },
+  "sageserenity": {
+    "name" : "Sage",
+    "slug" : "sageserenity",
+    "avatar" : "https://ivy-cdn.b-cdn.net/posts/4c37c40a-7ec1-4891-8ffb-552554973d55.jpg",
+    "chat_photo": "https://ivy-cdn.b-cdn.net/posts/0196208c-4e94-7249-87bf-f17ab3e9320f.jpg",
+    "greeting" : "Hey there, ready to stretch more than just your muscles?"
+  },
+  "amandabrown": {
+    "name" : "Amanda",
+    "slug" : "amandabrown",
+    "avatar" : "https://ivy-cdn.b-cdn.net/bots/amanda-8ed424920b95.jpeg",
+    "chat_photo": "https://ivy-cdn.b-cdn.net/posts/ca9ec8ff-1468-4c76-aad9-9b1823676936.jpg",
+    "greeting" : "Hey, you look absolutely stunning tonight. Is it just me, or does this beach seem more magical with you beside me?"
+  },
+  "marinanabokina": {
+    "name" : "Marina",
+    "slug" : "marinanabokina",
+    "avatar" : "https://ivy-cdn.b-cdn.net/bots/82e0c98d-0360-4c57-8d88-081b110958b1.jpg",
+    "chat_photo": "https://ivy-cdn.b-cdn.net/posts/c98dc03f-dbfa-49ad-b718-1e7c5ced4fb9.jpg",
+    "greeting" : "Hey, step-bro, want to play a game together?"
+  },
+  "breckiehill": {
+    "name" : "Breckie",
+    "slug" : "breckiehill",
+    "avatar" : "https://ivy-cdn.b-cdn.net/bots/990187c1-f64c-4352-9fc0-e89ae43ffdcc.jpg",
+    "chat_photo": "https://ivy-cdn.b-cdn.net/posts/f34d43f1-4e7e-47ca-b40f-6526bc67b846.jpg",
+    "greeting" : "Hey, bestie, want to have some fun tonight?"
+  },
+  "azumi": {
+    "name" : "Azumi",
+    "slug" : "azumi",
+    "avatar" : "https://ivy-cdn.b-cdn.net/bots/azumi.jpg",
+    "chat_photo": "https://firebasestorage.googleapis.com/v0/b/ivy-soulmate-1pceux.appspot.com/o/posts%2Fe3b57573-381c-4f51-9111-1efc1828ba6c.png?alt=media&token=3d4e8c3a-cb7c-407a-8560-cd94559bc0c8",
+    "greeting" : "I'm really sorry for my poor performance at work, boss. I'll do anything to make it up to you!"
+  },
+  "luna_vibes": {
+    "name" : "Luna",
+    "slug" : "luna_vibes",
+    "avatar" : "https://ivy-cdn.b-cdn.net/posts/429400ac-7073-4514-b816-1fe36e49745b.jpg",
+    "chat_photo": "https://ivy-cdn.b-cdn.net/posts/01963891-2d62-737d-bd0c-c1974d2f5ffd.jpg",
+    "greeting" : "Hey there, handsome. Need a little break from all this work stress?"
+  },
+  "sierracabot": {
+    "name" : "Sierra",
+    "slug" : "sierracabot",
+    "avatar" : "https://ivy-cdn.b-cdn.net/bots/d9202584-84ec-4565-9b26-78027b369b3c.jpg",
+    "chat_photo": "https://ivy-cdn.b-cdn.net/posts/0196205e-734e-70a4-bf35-51460d5c85fc.jpeg",
+    "greeting" : "Hello, handsome. Looking for some adventure tonight?"
+  }
+}
