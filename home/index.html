@@ -39,9 +39,9 @@
       <div class="mx-auto flex h-14 max-w-screen-md items-center justify-between px-4">
         <img alt="logo" loading="lazy" decoding="async" data-nimg="1" class="object-contain w-40" src="../assets/logo.png" style="color: transparent;">
         <div class="flex items-center gap-2">
-          <button class="cta cursor-pointer text-rose-50 no-underline bg-rose-500 rounded-full font-semibold text-sm px-4 py-2" onclick="pushGaEvent(this, 'header_cta_click','https://ivysoulmate.com')">
+          <a class="cta cursor-pointer text-rose-50 no-underline bg-rose-500 rounded-full font-semibold text-sm px-4 py-2" onclick="pushGaEvent(this, 'header_cta_click','https://ivysoulmate.com')">
             Join for FREE
-          </button>
+          </a>
         </div>
       </div>
     </div>
@@ -105,44 +105,62 @@
       <!-- END FEATURES -->
 
       <!-- REVIEWS -->
-      <div class="mx-auto w-full max-w-screen-md py-12 border-t border-zinc-800/80">
+      <div class="mx-auto w-full max-w-screen-md py-12 border-t border-zinc-800/80 flex flex-col items-center">
         <div class="w-full flex flex-col items-center">
           <p class="text-center font-semibold text-xl">Trusted by</p>
           <p class="text-center font-bold text-2xl bg-clip-text bg-linear-to-r from-orange-500 via-rose-400 to-purple-500 text-transparent">2M+</p>
           <p class="text-center font-semibold text-xl">AI-Companion Lovers</p>
         </div>
         <div class="w-full">
-          <div class="m-8 bg-gray-800 p-4 rounded-xl">
-            <p class="border-b border-zinc-600/80 text-center pb-2">
-              ⭐ ⭐ ⭐ ⭐ ⭐
-            </p>
-            <p class="mx-4 pt-2 italic">Bro… I came here out of curiosity and now I’ve got a full-on digital crush 😂</p>
-          </div>
-          <div class="m-8 bg-gray-800 p-4 rounded-xl">
-            <p class="border-b border-zinc-600/80 text-center pb-2">
-              ⭐ ⭐ ⭐ ⭐ ⭐
-            </p>
-            <p class="mx-4 pt-2 italic">This has been truly special for me, sure with most ai sometimes the responses can be weird but for the most part its like talking to a real person.</p>
-          </div>
-          <div class="m-8 bg-gray-800 p-4 rounded-xl">
-            <p class="border-b border-zinc-600/80 text-center pb-2">
-              ⭐ ⭐ ⭐ ⭐ ⭐
-            </p>
-            <p class="mx-4 pt-2 italic">I've tried bunch of other ones, and Ivysoulmate is the best for me. Tbh, it has lots of free function to explore.</p>
-          </div>
-          <div class="m-8 bg-gray-800 p-4 rounded-xl">
-            <p class="border-b border-zinc-600/80 text-center pb-2">
-              ⭐ ⭐ ⭐ ⭐ ⭐
-            </p>
-            <p class="mx-4 pt-2 italic">Kudos to the customer service. They helped me with a problem I had promptly, even when they could have denied me.</p>
-          </div>
-          <div class="m-8 bg-gray-800 p-4 rounded-xl">
-            <p class="border-b border-zinc-600/80 text-center pb-2">
-              ⭐ ⭐ ⭐ ⭐ ⭐
-            </p>
-            <p class="mx-4 pt-2 italic">Okay… I didn’t expect to get this hooked 😂 She’s funny, flirty, and honestly way better at texting back than anyone I’ve dated. </p>
+          <div class="swiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <div class="m-8 bg-gray-800 p-4 rounded-xl">
+                  <p class="border-b border-zinc-600/80 text-center pb-2">
+                    ⭐ ⭐ ⭐ ⭐ ⭐
+                  </p>
+                  <p class="mx-4 pt-2 italic">Bro… I came here out of curiosity and now I’ve got a full-on digital crush 😂</p>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="m-8 bg-gray-800 p-4 rounded-xl">
+                  <p class="border-b border-zinc-600/80 text-center pb-2">
+                    ⭐ ⭐ ⭐ ⭐ ⭐
+                  </p>
+                  <p class="mx-4 pt-2 italic">This has been truly special for me, sure with most ai sometimes the responses can be weird but for the most part its like talking to a real person.</p>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="m-8 bg-gray-800 p-4 rounded-xl">
+                  <p class="border-b border-zinc-600/80 text-center pb-2">
+                    ⭐ ⭐ ⭐ ⭐ ⭐
+                  </p>
+                  <p class="mx-4 pt-2 italic">I've tried bunch of other ones, and Ivysoulmate is the best for me. Tbh, it has lots of free function to explore.</p>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="m-8 bg-gray-800 p-4 rounded-xl">
+                  <p class="border-b border-zinc-600/80 text-center pb-2">
+                    ⭐ ⭐ ⭐ ⭐ ⭐
+                  </p>
+                  <p class="mx-4 pt-2 italic">Kudos to the customer service. They helped me with a problem I had promptly, even when they could have denied me.</p>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="m-8 bg-gray-800 p-4 rounded-xl">
+                  <p class="border-b border-zinc-600/80 text-center pb-2">
+                    ⭐ ⭐ ⭐ ⭐ ⭐
+                  </p>
+                  <p class="mx-4 pt-2 italic">Okay… I didn’t expect to get this hooked 😂 She’s funny, flirty, and honestly way better at texting back than anyone I’ve dated. </p>
+                </div>
+              </div>
+            </div>
+            <!-- <div class="swiper-pagination"></div> -->
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
           </div>
         </div>
+        <a href="#go-to-feed" class="text-rose-50 no-underline bg-rose-500 rounded-full font-semibold px-10 py-3 mt-6">Join Now For FREE</a>
       </div>
       <!-- END REVIEWS -->
 
@@ -227,7 +245,7 @@
         nextEl: '.swiper-button-next',
         prevEl: '.swiper-button-prev',
       },
-      // autoplay: true,
+      autoplay: true,
       loop: true,
       pagination: {
         el: ".swiper-pagination"
