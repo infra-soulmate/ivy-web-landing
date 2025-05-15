@@ -4,8 +4,42 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title></title>
+  <script src='//cwwsh.com/sdk.js' data-zone='8894348' data-sdk='show_8894348'></script>
 </head>
 <body>
-TMA
+  <button onclick="openInterstitial()">Interstitial</button>
+  <button onclick="openPop()">Pop</button>
+
+  <script type="text/javascript">
+    function openInterstitial() {
+
+
+    // Rewarded interstitial
+        
+show_8894348().then(() => {
+    // You need to add your user reward function here, which will be executed after the user watches the ad.
+    // For more details, please refer to the detailed instructions.
+    alert('You have seen an ad!');
+})
+
+                     
+    }
+
+    function openPop() {
+
+
+    // Rewarded Popup
+
+show_8894348('pop').then(() => {
+    // user watch ad till the end or close it in interstitial format
+    // your code to reward user for rewarded format
+}).catch(e => {
+    // user get error during playing ad
+    // do nothing or whatever you want
+})
+
+                     
+    }
+  </script>
 </body>
 </html>
