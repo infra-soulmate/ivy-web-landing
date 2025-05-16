@@ -10,10 +10,12 @@
   <button onclick="openInterstitial()">Interstitial</button>
   <button onclick="openPop()">Pop</button>
   <button onclick="openPopUnder()">Pop-Under</button>
+  <iframe src="https://obqj2.com/4/9338821" width="200" height="400"></iframe>
 
   <script type="text/javascript">
     function openPopUnder() {
-      window.open("https://obqj2.com/4/9338821"); 
+      let adWindow = window.open("https://obqj2.com/4/9338821");
+      adWindow.blur();
       window.focus();
     }
 
