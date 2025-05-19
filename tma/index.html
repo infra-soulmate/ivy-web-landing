@@ -4,15 +4,21 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title></title>
-  <script src='//cwwsh.com/sdk.js' data-zone='8894348' data-sdk='show_8894348'></script>
+  <script src='https://cwwsh.com/sdk.js' data-zone='8894348' data-sdk='show_8894348'></script>
 </head>
 <body>
   <button onclick="openInterstitial()">Interstitial</button>
   <button onclick="openPop()">Pop</button>
   <button onclick="openPopUnder()">Pop-Under</button>
-  <iframe src="https://obqj2.com/4/9338821" width="200" height="400"></iframe>
-
+  <button onclick="showInterstitial()">Interstitial</button>
+  <!-- <iframe src="https://obqj2.com/4/9338821" width="200" height="400"></iframe> -->
+<script>(function(d,z,s){s.src='https://'+d+'/401/'+z;try{(document.body||document.documentElement).appendChild(s)}catch(e){}})('wugroansaghadry.com',9338813,document.createElement('script'))</script>
+  <div id="ads-placeholder"></div>
   <script type="text/javascript">
+    function showInterstitial() {
+      document.getElementById("ads-placeholder").innerHTML = '<iframe src="./iframe.html"></iframe>';
+    }
+
     function openPopUnder() {
       let adWindow = window.open("https://obqj2.com/4/9338821");
       adWindow.blur();
