@@ -11,10 +11,15 @@
   <button onclick="openPop()">Pop</button>
   <button onclick="openPopUnder()">Pop-Under</button>
   <button onclick="showInterstitial()">Interstitial</button>
-  <!-- <iframe src="https://obqj2.com/4/9338821" width="200" height="400"></iframe> -->
+  <button onclick="showDirectLink()">Direct link</button>
+  <iframe id="direct-link-placeholder" width="200" height="400"></iframe>
 <script>(function(d,z,s){s.src='https://'+d+'/401/'+z;try{(document.body||document.documentElement).appendChild(s)}catch(e){}})('wugroansaghadry.com',9338813,document.createElement('script'))</script>
   <div id="ads-placeholder"></div>
   <script type="text/javascript">
+    function showDirectLink() {
+      document.getElementById("direct-link-placeholder").location = "https://obqj2.com/4/9338821";
+    }
+
     function showInterstitial() {
       document.getElementById("ads-placeholder").innerHTML = '<iframe src="./iframe.html"></iframe>';
     }
