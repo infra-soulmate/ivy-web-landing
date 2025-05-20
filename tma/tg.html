@@ -16,11 +16,11 @@
 
 
     // Simple device detection
-    var isiOS = navigator.userAgent.match('iPad') || navigator.userAgent.match('iPhone') || navigator.userAgent.match('iPod'),
-        isAndroid = navigator.userAgent.match('Android');
+    // var isiOS = navigator.userAgent.match('iPad') || navigator.userAgent.match('iPhone') || navigator.userAgent.match('iPod'),
+        // isAndroid = navigator.userAgent.match('Android');
 
     // Mobile
-    if (isiOS || isAndroid) {
+    // if (isiOS || isAndroid) {
       // Load our custom protocol in the iframe, for Chrome and Opera this burys the error dialog (which is actually HTML)
       // for iOS we will get a popup error if this protocol is not supported, but it won't block javascript
       document.getElementById('loader').src = 'tg://resolve?domain=ivy_girlfriend_bot&startapp';
@@ -32,7 +32,7 @@
       // If you have a mobile web app, your fallback could be that instead. 
       // fallbackLink = isAndroid ? 'https://play.google.com/store/apps/details?id=com.mycompany.myapp' :
                                  // 'itms-apps://itunes.apple.com/app/my-app/idxxxxxxxx?mt=8' ;
-    }
+    // }
 
     // Now we just wait for everything to execute, if the user is redirected to your custom app
     // the timeout below will never fire, if a custom app is not present (or the user is on the Desktop)
