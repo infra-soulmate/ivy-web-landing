@@ -181,11 +181,7 @@
 
   <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
   <script type="text/javascript">
-    const hostnameParts = location.hostname.split(".");
-    if (hostnameParts.length != 3) {
-      window.location.href = ("https://ivysoulmate.com" + window.location.search);
-    }
-    const slug = hostnameParts[0];
+    const slug = location.hostname.split(".")[0];
     fetch(`https://ivyn8n.69.mu/webhook/publicProfile?idol=${slug}&content=profile`)
       .then(response => response.json())
       .then(data => {
