@@ -237,6 +237,8 @@
             </div>
           `;
           document.getElementById("idol-info-wrapper").innerHTML = idolInfoHtml;
+        } else {
+          window.location.href = ("https://ivysoulmate.com" + window.location.search);
         }
       });
     fetch(`https://ivyn8n.69.mu/webhook/publicProfile?idol=${slug}&content=highlights`)
