@@ -1,0 +1,7 @@
+@import "tailwindcss";
+
+:root {
+  --swiper-theme-color: var(--color-rose-500) !important;
+  --swiper-navigation-size: 24px !important;
+  --swiper-navigation-color: var(--color-gray-200);
+}
