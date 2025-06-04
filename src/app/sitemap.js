@@ -43,7 +43,7 @@ export default function sitemap() {
   ];
   return availableIdols.map(slug => {
     return {
-      url: `https://onlyfansleaksdaily.com/${slug}-onlyfans-leak`,
+      url: `https://ivysoulmate.xyz/${slug}-onlyfans-leak`,
       lastModified: new Date(),
       changeFrequency: 'monthly',
       priority: 1
