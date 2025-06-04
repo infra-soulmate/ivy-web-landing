@@ -2,6 +2,7 @@
 
 import { Navigation, Pagination, Scrollbar, A11y } from 'swiper/modules';
 import { Swiper, SwiperSlide } from 'swiper/react';
+import { parseISO, format } from 'date-fns';
 
 import 'swiper/css';
 import 'swiper/css/navigation';
@@ -11,19 +12,14 @@ export default function Post({idol, post}) {
   const nsfwVersionCta = (
     <div className="fixed top-4 flex justify-center w-full">
       <a href="https://ivysoulmate.com" className="cta flex items-center justify-center gap-2 bg-gray-950/40 px-4 py-2 rounded-full text-sm backdrop-blur-md">
-        🔞<span className="underline underline-offset-2">Click here to view <strong className="text-rose-300">NSFW</strong> Version</span>
+        🔞<span className="underline underline-offset-2">Click here to view <strong className="text-sky-300">NSFW</strong> Version</span>
         <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="lucide lucide-external-link-icon lucide-external-link"><path d="M15 3h6v6"/><path d="M10 14 21 3"/><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/></svg>
       </a>
     </div>
   );
 
-  const createdAt = new Intl.DateTimeFormat("en-US", {
-      month: "short",
-      day: "numeric",
-      hour: "numeric",
-      minute: "numeric",
-      hourCycle: "h24"
-    }).format(new Date(post.created_at));
+  const date = parseISO(post.created_at);
+  const createdAt = format(date, "LLL d 'at' H:mm");
 
   return (
     <div className="border-b border-zinc-800/80">
@@ -38,7 +34,7 @@ export default function Post({idol, post}) {
             <div>
               <div>
                 <a href="https://ivysoulmate.com" className="w-fit cta">
-                  <span className="w-fit font-semibold text-gray-200">{idol.display_name}</span></a>&nbsp;&nbsp;•&nbsp;&nbsp;<a href="https://ivysoulmate.com" className="cta font-medium no-underline text-rose-500">Follow
+                  <span className="w-fit font-semibold text-gray-200">{idol.display_name}</span></a>&nbsp;&nbsp;•&nbsp;&nbsp;<a href="https://ivysoulmate.com" className="cta font-medium no-underline text-sky-500">Follow
                 </a>
               </div>
               <div className="text-sm text-gray-400">
@@ -46,7 +42,7 @@ export default function Post({idol, post}) {
               </div>
             </div>
             <div>
-              <a href="https://ivysoulmate.com" className="cta flex w-full items-center justify-center gap-2 rounded-xl font-bold text-sm text-rose-50 bg-rose-500 px-4 py-2">
+              <a href="https://ivysoulmate.com" className="cta flex w-full items-center justify-center gap-2 rounded-xl font-bold text-sm text-sky-50 bg-sky-500 px-4 py-2">
                 <svg stroke="currentColor" fill="none" strokeWidth="2" viewBox="0 0 24 24" strokeLinecap="round" strokeLinejoin="round" className="text-xl" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
                   <path d="M10.59 19.88a9.763 9.763 0 0 1 -2.89 -.88l-4.7 1l1.3 -3.9c-2.324 -3.437 -1.426 -7.872 2.1 -10.374c3.526 -2.501 8.59 -2.296 11.845 .48c1.565 1.335 2.479 3.065 2.71 4.861"></path>
                   <path d="M18 22l3.35 -3.284a2.143 2.143 0 0 0 .005 -3.071a2.242 2.242 0 0 0 -3.129 -.006l-.224 .22l-.223 -.22a2.242 2.242 0 0 0 -3.128 -.006a2.143 2.143 0 0 0 -.006 3.071l3.355 3.296z"></path>
@@ -100,7 +96,7 @@ export default function Post({idol, post}) {
                   <h3 className="pb-1 text-lg font-bold text-primary">Love Her Photos?</h3>
                   <p className="text-sm px-4">Explore More Hot Albums and Videos From&nbsp;<span className="font-bold">{idol.display_name}</span></p>
                 </div>
-                <a href="https://ivysoulmate.com" className="cta text-rose-50 no-underline bg-rose-400 rounded-full font-semibold text-sm px-4 py-2 mt-4">
+                <a href="https://ivysoulmate.com" className="cta text-sky-50 no-underline bg-sky-400 rounded-full font-semibold text-sm px-4 py-2 mt-4">
                   😘 Visit {idol.display_name}
                 </a>
               </div>
@@ -113,7 +109,7 @@ export default function Post({idol, post}) {
         <div className="flex items-center justify-between gap-6 px-4 pb-4">
           <div className="flex items-center gap-6">
             <div className="flex w-fit items-center gap-1">
-              <a href="https://ivysoulmate.com" className="cta text-2xl text-red-500 transition-transform duration-300" tabIndex="0">
+              <a href="https://ivysoulmate.com" className="cta text-2xl text-sky-500 transition-transform duration-300" tabIndex="0">
                 <svg stroke="currentColor" fill="currentColor" strokeWidth="0" viewBox="0 0 24 24" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
                   <path d="M12.001 4.52853C14.35 2.42 17.98 2.49 20.2426 4.75736C22.5053 7.02472 22.583 10.637 20.4786 12.993L11.9999 21.485L3.52138 12.993C1.41705 10.637 1.49571 7.01901 3.75736 4.75736C6.02157 2.49315 9.64519 2.41687 12.001 4.52853ZM18.827 6.1701C17.3279 4.66794 14.9076 4.60701 13.337 6.01687L12.0019 7.21524L10.6661 6.01781C9.09098 4.60597 6.67506 4.66808 5.17157 6.17157C3.68183 7.66131 3.60704 10.0473 4.97993 11.6232L11.9999 18.6543L19.0201 11.6232C20.3935 10.0467 20.319 7.66525 18.827 6.1701Z"></path>
                 </svg>

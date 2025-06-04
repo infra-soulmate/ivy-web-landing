@@ -1,5 +1,6 @@
 import { DM_Sans } from "next/font/google";
 import "./globals.css";
+import { GoogleAnalytics } from '@next/third-parties/google';
 
 const dmSans = DM_Sans({
   variable: "--font-dm-sans",
@@ -25,6 +26,7 @@ export default function RootLayout({ children }) {
       >
         {children}
       </body>
+        <GoogleAnalytics gaId="G-T0QE3560G5" />
     </html>
   );
 }
