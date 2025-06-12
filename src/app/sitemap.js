@@ -46,7 +46,7 @@ export default function sitemap() {
       url: `https://ivysoulmate.xyz/${slug}-onlyfans-leak`,
       lastModified: new Date(),
       changeFrequency: 'monthly',
-      priority: 1
+      priority: 0.8
     };
   });
 }
